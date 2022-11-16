@@ -1,0 +1,50 @@
+.footerMain {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.footer-left {
+    margin-left: 20rem;
+    width: 100%;
+    max-width: 37rem;
+}
+.footerItem {
+    display: flex;
+    padding: 0px 10px;
+}
+.footer-left .footerItem li {
+    /* display: inline-block; */
+}
+.footer-left .iconItem {
+    display: inline-block;
+    font-size: 12px;
+    justify-content:flex-start;
+}
+.iconFooter {
+    padding: 0px 10px;
+}
+.footer-right .title {
+    color: white;
+}
+.textfooter {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+.footer-right .inputemail {
+    border: 1px solid rgb(61, 56, 56);
+    background-color: black;
+    
+}
+.footer-right .email {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 9px;
+}
+.footer-right .btnsubscribe {
+    padding: 10px 10px;
+    background-color: #c5a47e;
+    border: none;
+    color: white;
+}

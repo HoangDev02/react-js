@@ -1,0 +1,34 @@
+.testimonial {
+    margin-top: 5px;
+}
+.container {
+   text-align: center;
+   width: 100%;
+}
+.title {
+    color: black;
+    margin-top: 50px;
+}
+.title .titleText {
+    font-weight: 400;
+    font-size: 14px;
+}
+.avatar {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 50%;
+}
+.center .name {
+    font-size: 12px;
+    font-weight: 600;
+}
+.center .meta-add {
+    font-size: 10px;
+}
+.centerText {
+    background: url(https://pathhotel.webhotel.vn/images/icon-left.png) no-repeat;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 290px;
+    font-style: italic;
+}

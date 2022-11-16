@@ -1,0 +1,48 @@
+.itemNew {
+    /* display: flex; */
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.new-iteam {
+    /* justify-content: center; */
+    width: 100%;
+    max-width: 17rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.new-iteam img:hover {
+    transform: scale(1.25);
+    transition: all 0.5s linear;
+}
+.new-meta {
+    display: flex;
+    /* justify-content: center; */
+}
+.metaNew {
+    padding: 5px 15px;
+    font-size: 13px;
+}
+.meta {
+    display: block;
+    opacity: 0.5;
+}
+.iconNew {
+    margin-left: 10px;
+    padding: 0px 10px;
+    color: #c5a47e;
+}
+.new-excerpt {
+    opacity: 0.5;
+    font-style: italic;
+    font-size: 13px;
+
+}
+.new-readmore .readmoreBtn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.new-readmore .readmoreBtn:hover {
+    color: #c5a47e;
+}

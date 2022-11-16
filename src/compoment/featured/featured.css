@@ -1,0 +1,88 @@
+.entry {
+    display: flex;
+    gap: 2rem;
+}
+.entrycontainer {
+    width: 100%;
+    /* max-width: 1300px; */
+    margin: 20px 0px 20px 200px;
+    /* background-color: bisque; */
+}
+.entry-left {
+    display: inline-block;
+    flex: 1 1;
+    width: 100%;
+    max-width: 37rem;
+    /* background-color: antiquewhite; */
+}
+.entryText {
+    font-size: 14px;
+    font-weight: 100;
+}
+.entryBtn {
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    color: white;
+    cursor: pointer;
+    bottom: 10px;
+}
+.entryBtn:hover {
+    background-color: #c5a47e;
+    transition: all 0.3s linear;
+}
+.entry-right {
+    display: inline-block;
+    flex: 1 1;
+    width: 100%;
+    max-width: 45.4rem;
+    /* background-color: aliceblue; */
+    background: url(https://pathhotel.webhotel.vn/images/bg-entry.jpg) no-repeat center fixed;
+}
+.imgBanner {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 10px;
+}
+.entry-right .imgBanner:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s linear;
+}
+.room {
+    display: flex;
+}
+.room-left {
+    display: inline-block;
+    width: 100%;
+    max-width: 50rem;
+}
+.imgRoom {
+    width: 100%;
+    height: 100%;
+    max-height: 30rem;
+}
+.room-left img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+}
+.room-right {
+    display: inline-block;
+    margin-left: 70px;
+    bottom: 10px;
+}
+.roomIeam {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.roomIcon {
+    display: inline-block;
+}
+.roomText {
+    display: inline-block;
+    margin-left: 5px;
+}
+.roomcontext {
+    font-size: 14px;
+    max-width: 37rem;
+    font-weight: 100;
+}
