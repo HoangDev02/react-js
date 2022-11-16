@@ -76,6 +76,7 @@
    .headerBtn:hover {
     color: black;
     background-color: white;
+    transition: all 0.3s linear;
    }
   .headerSearch {
     margin-top: 17.5rem;
@@ -157,4 +158,15 @@
   .optionCounterButton:disabled {
     cursor: not-allowed;
   }
-  
+  .headerSearchItem .SearchBtn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  .headerSearchItem .SearchBtn:hover {
+    background-color: #c5a47e;
+    color: white;
+    transition: all 0.3s linear;
+  }

@@ -176,7 +176,7 @@ import {
                   )}
                 </div>
                 <div className="headerSearchItem">
-                  <button className="headerBtn" onClick={handleSearch}>
+                  <button className="SearchBtn" onClick={handleSearch}>
                     Search
                   </button>
                 </div>

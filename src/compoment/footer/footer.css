@@ -25,6 +25,7 @@
 }
 .footer-right .title {
     color: white;
+    margin-top: 19px;
 }
 .textfooter {
     display: block;
@@ -38,9 +39,10 @@
 }
 .footer-right .email {
     border: none;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: rgb(0, 0, 0);
     padding: 10px 9px;
+    bottom: 10rem;
 }
 .footer-right .btnsubscribe {
     padding: 10px 10px;
