@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .team{
   width: 20px;
   height: 20px;
@@ -13,4 +16,13 @@
   width: max-content;
   padding: 1px;
   padding-top: -2px;
+}
+.siCheckButton {
+  background-color: black;
+  color: white;
+}
+.siCheckButton:hover {
+  background-color: #c5a47e;
+    color: white;
+    transition: all 0.3s linear;
 }

@@ -25,19 +25,19 @@ function Header() {
           <h1>Booking</h1>
         </Link>
         <nav className="navbar">
-          <Link to="#" className="nav-link">
+          <Link to="/" className="nav-link">
             home
           </Link>
           <Link to="#" className="nav-link">
             pages
           </Link>
-          <Link to="#" className="nav-link">
+          <Link to="/rooms" className="nav-link">
             features
           </Link>
-          <Link to="#" className="nav-link ">
+          <Link to="/" className="nav-link ">
             offer & package
           </Link>
-          <Link to="#" className="nav-link active">
+          <Link to="/rooms" className="nav-link active">
             room
           </Link>
           <Link to="#" className="nav-link">

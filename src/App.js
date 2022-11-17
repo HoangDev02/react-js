@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Booking from "./pages/booking/Booking";
 import DetailRoom from "./pages/detail-rooms/DetailRooms";
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/detail" element={<DetailRoom/>}/>
         <Route path="/search" element={<List/>}/>
         <Route path="/description" element={<ViewMore/>}/>
+        <Route path="/booking" element={<Booking/>}/>
       </Routes>
      </BrowserRouter>
     </div>

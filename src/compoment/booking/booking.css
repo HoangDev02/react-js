@@ -1,0 +1,59 @@
+.bookingMain {
+    display: flex;
+}
+.iconBooking {
+    display: inline-block;
+    padding: 10px 10px;
+}
+.iconCheck  {
+    color: #febb02;
+    margin-right: 10px;
+}
+.bookingItem {
+    display: flex;
+}
+.Booking-l {
+    display: flex;
+    width: 100%;
+    max-width: 25rem;
+}
+
+.booking-r{
+    /* display: flex; */
+    width: 100%;
+    max-width: 74rem;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+.bookingDate {
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+.booking-r .btnBooking {
+    display: flex;
+}
+.booking-r .bookingNote {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.bookingNote .square {
+    width: 20px;
+    height: 20px;
+    margin: 17px 10px;
+    background-color: #0095ff;
+}
+.bookingNote .noAvailability {
+    width: 20px;
+    height: 20px;
+    margin: 17px 10px;
+    background-color: rgba(0, 0, 0, 0.508);
+}
+.btnBooking {
+    margin-left: 33rem;
+    width: 150px;
+    height: 30px;
+    margin-top: 16px;
+    justify-content: center;
+    background-color: #c5a47e;
+    border: 1px solid ;
+}

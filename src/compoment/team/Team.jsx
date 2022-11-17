@@ -2,8 +2,13 @@ import "./team.css";
 import { HiPlusSm } from "react-icons/hi";
 import { BiLike } from "react-icons/bi";
 import { FiHeart,FiStar } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
+
 const Team = ({hotels}) => {
-  
+  const navigate = useNavigate();
+  const handleBooking = () => {
+    navigate("/booking");
+  };
   return (
         <div className="searchItem">
         <img
@@ -15,7 +20,7 @@ const Team = ({hotels}) => {
             <FiHeart className="heart"/>
           </div>
       <div className="siDesc">
-        <h1 className="siTitle">{hotels.name}
+        <a href="/description" className="siTitle">{hotels.name}
           <FiStar className="team"/>
           <FiStar className="team"/>
           <FiStar className="team"/>
@@ -23,7 +28,8 @@ const Team = ({hotels}) => {
           <BiLike className="mnt"/>
           <HiPlusSm className="mnt"/>
           </span>
-        </h1>
+
+        </a>
         <span className="siDistance">Zuiddoost AmsDetdam - Show on map
         <span className=""> </span></span>
         <span className="siTaxiOp">Free airport taxi</span>
@@ -31,7 +37,7 @@ const Team = ({hotels}) => {
           {hotels.category}
         </span>
         <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
+          {hotels.description}
         </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
@@ -46,7 +52,7 @@ const Team = ({hotels}) => {
         <div className="siDetailTexts">
           <span className="siPrice">{hotels.price}</span>
           <span className="siTaxOp">Includes taxes and fees</span>
-          <button className="siCheckButton">See availability</button>
+          <button className="siCheckButton" onClick={handleBooking}>See availability</button>
         </div>
       </div>
     </div>
