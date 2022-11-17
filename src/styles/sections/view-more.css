@@ -1,0 +1,171 @@
+.view-more-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding: 30px 0;
+}
+
+.view-more-detail {
+  padding: 30px 0;
+}
+
+.view-more-navigation {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 0 0 silver;
+  gap: 50px;
+}
+
+.item-view-more-navigation {
+  padding: 15px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+  display: inline;
+  transition: all 0.3s linear;
+}
+
+.item-view-more-navigation.active,
+.item-view-more-navigation:hover {
+  color: var(--primary-color);
+  position: relative;
+  transition: all 0.1s linear;
+}
+
+.item-view-more-navigation.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s linear;
+}
+
+.details {
+  min-height: 490px;
+}
+
+.description-wrapper {
+  padding: 40px 0 0;
+  animation: appear2 0.5s linear;
+}
+
+.description-item:first-child strong,
+.description-item:first-child p {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.description-item:first-child p {
+  padding: 20px 0;
+  opacity: 0.75;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.description-item:first-child p:last-child {
+  padding: unset;
+}
+
+.description-item:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 0;
+}
+
+.description-item-group {
+  padding: 30px 0 10px;
+}
+
+.amenities-heading {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.amenities-heading img {
+  padding-right: 25px;
+}
+
+.list-amenities {
+  padding: 20px 0;
+}
+
+.amenities-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.amenities-item ion-icon {
+  padding-right: 5px;
+}
+
+.additional-wrapper {
+  padding: 40px 0;
+  animation: appear2 0.5s linear;
+}
+
+.book-now {
+  padding: 50px 0;
+  color: white;
+}
+
+.book-now-wrapper {
+  margin-top: 20px;
+  height: 588px;
+  padding: 30px;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.book-now-wrapper li {
+  list-style: none;
+}
+
+.book-now-price {
+  text-transform: capitalize;
+  padding: 30px 0;
+}
+
+.book-now-price span {
+  display: inline-block;
+  font-size: 50px;
+  padding: 10px 0 10px 5px;
+}
+
+.book-now-wrapper .btn {
+  padding: 15px 0;
+  color: white;
+}
+
+.list-room-type {
+  padding: 30px 0;
+}
+
+.room-type {
+  padding: 10px 0;
+}
+
+.room-type p {
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.room-type p span {
+  color: white;
+  padding-left: 5px;
+}
+
+@keyframes appear2 {
+  from {
+    opacity: 0;
+  }
+}

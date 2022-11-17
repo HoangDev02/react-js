@@ -1,0 +1,19 @@
+.container-sm {
+  width: 1268px;
+}
+
+.container-md {
+  width: 1380px;
+}
+
+.container-lg {
+  width: 1480px;
+}
+
+.container-sm,
+.container-md,
+.container-lg {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

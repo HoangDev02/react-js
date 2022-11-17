@@ -98,11 +98,7 @@ const List = () => {
             <button>Search</button>
           </div>
           <div className="listResult">
-            {/* <Gill />
-            <Btn />
-            <Team />
-            <Bmn />
-            <SearchItem /> */}
+          
             <FilterableHotelTable hotels={HOTELS} />
           </div>
         </div>

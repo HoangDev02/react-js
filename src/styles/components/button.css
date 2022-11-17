@@ -1,0 +1,9 @@
+.btn {
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
