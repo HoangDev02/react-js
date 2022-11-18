@@ -8,6 +8,10 @@
   font-family: var(--font-renner);
   display: flex;
   flex-direction: column;
+  /* width: 100%; */
+}
+.navigation-wrapper.scroll {
+  width: 100%;
 }
 .navigation-logo {
   color: white;

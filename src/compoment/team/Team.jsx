@@ -41,7 +41,7 @@ const Team = ({hotels}) => {
         </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
-          You can cancel later, so lock in this great price today!
+          {hotels.rooms}
         </span>
       </div>
       <div className="siDetails">

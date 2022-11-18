@@ -15,7 +15,7 @@ import {
   import { format } from "date-fns";
   import { useNavigate } from "react-router-dom";
   import home from '../../img/home1-slide-1.jpg'
-  const Header = ({ type }) => {
+  const Header = ({ type, filterText }) => {
     const [destination, setDestination] = useState("");
     const [openDate, setOpenDate] = useState(false);
     const [date, setDate] = useState([
@@ -33,7 +33,7 @@ import {
     });
   
     const navigate = useNavigate();
-  
+    
     const handleOption = (name, operation) => {
       setOptions((prev) => {
         return {
@@ -79,6 +79,7 @@ import {
                     placeholder="Where are you going?"
                     className="headerSearchInput"
                     onChange={(e) => setDestination(e.target.value)}
+                    // value={filterText}
                   />
                 </div>
                 <div className="headerSearchItem">

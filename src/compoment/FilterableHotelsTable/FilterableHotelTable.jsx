@@ -1,15 +1,18 @@
-import React, {useState} from 'react'
-import Btn  from '../btn/Btn';
+import React, {useState, useEffect} from 'react'
+import Search  from '../search/Search';
 import HotelsTable from '../hotelTable/HotelsTable';
+import { useLocation } from "react-router-dom";
 
 // import './FilterableProductTable.css'
 const FilterableProductTable = ({hotels}) => {
-  const [filterText, setFilterText] = useState('');
+  const location = useLocation();
   const [inStockOnly, setInStockOnly] = useState(false);
-
+  const [destination, setDestination] = useState(location.state.destination);
+  const [filterText, setFilterText] = useState(destination);
+  
   return (
     <div>
-      <Btn 
+      <Search 
           filterText={filterText} 
           inStockOnly={inStockOnly} 
           onFilterTextChange={setFilterText} 

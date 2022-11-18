@@ -12,7 +12,7 @@ const Featured = () => {
     const navigate = useNavigate();
     const handleSearch = () => {
         navigate("/description");
-      };
+    };
   return (
     <div className='featured'>
         <div className='entry'>
