@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import Search  from '../search/Search';
 import HotelsTable from '../hotelTable/HotelsTable';
 import { useLocation } from "react-router-dom";
-import Menu from "../../compoment/Menu";
 
 // import './FilterableProductTable.css'
 const FilterableProductTable = ({hotels}) => {

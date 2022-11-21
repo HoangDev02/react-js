@@ -42,7 +42,6 @@ import {
         };
       });
     };
-  
     const handleSearch = () => {
       navigate("/search", { state: { destination, date, options } });
     };

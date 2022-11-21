@@ -87,8 +87,6 @@ const Btn = ({
             </label>
           </div>
         </form>
-        
-        
     )
 }
 export default Btn

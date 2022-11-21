@@ -8,7 +8,6 @@ import News from '../../compoment/news/News'
 import Relaxtion from '../../compoment/relaxtion/Relaxtion'
 import SpecialOffer from '../../compoment/specialOffer/SpecialOffer'
 import Testimonaials from '../../compoment/testimonials/Testimonaials'
-import ButtonCartCount from '../../compoment/ButtonCartCount'
 const Home = () => {
   return (
     <div>

@@ -19,7 +19,6 @@ export const HOTELS = [
         name: "Hyatt Regency Amsterdam",
         description: "Entire studio • 2 bathroom • 21m² 2 full bed",
          rooms: "Còn 7 phòng"
-
     },
     {
       id: 3,

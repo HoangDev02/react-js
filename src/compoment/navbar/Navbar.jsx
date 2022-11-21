@@ -1,8 +1,16 @@
 import React from 'react'
 import './navbar.css'
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-const navbar = () => {
+
+
+const Navbar = () => {
+    const navigate = useNavigate();
+    const handleSearch = () => {
+        navigate("/booking");
+      };
+
   return (
     <div className='navbar'>
         <span className='logo'>Booking</span>
@@ -32,16 +40,15 @@ const navbar = () => {
             </ul>
         </div>
 
-        <div className='navBtn'>
-            
+        <div className='navBtn'> 
             {/* <button className='navButton'>Register</button>
             <button className='navButton'>login</button> */}
-            <button className='navButton'>Booking Now</button>
+            <button className='navButton' onClick={handleSearch}>Booking Now</button>
         </div>
     </div>
   )
 }
 
-export default navbar
+export default Navbar
 
 

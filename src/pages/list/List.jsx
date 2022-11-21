@@ -15,19 +15,17 @@ import ButtonCartCount from '../../compoment/ButtonCartCount'
 
 const List = () => {
   return (
-    <div>
+    <div className="listMain">
       <Navbar/>
+      <ButtonCartCount/>
+
       {/* <Navbar />
       <Header type="list" /> */}
       <div className="listContainer">
-        <div className="listWrapper">
-          
           <div className="listResult">
-            <ButtonCartCount/>
             <Gill/>
             <FilterableHotelTable hotels={HOTELS}  />
           </div>
-        </div>
       </div>
     </div>
   );

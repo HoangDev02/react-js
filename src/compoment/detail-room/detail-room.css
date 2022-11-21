@@ -5,6 +5,9 @@ h4,
 h5 {
    margin: 0;
 }
+.detail-room-page {
+   overflow: hidden;
+}
 .detail-room-page .header {
    background-image: url("https://pathhotel.webhotel.vn/images/bg-vip-custommer.jpg");
    background-size: cover;
@@ -45,13 +48,178 @@ h5 {
    text-transform: uppercase;
 }
 .banner-slide {
-    height: 490px;
+   height: 490px;
+   margin: 0 -10px;
 }
 .banner-slide .slide-item {
-    margin: 0 10px;
-    height: 100%;
+   height: 100%;
+   margin: 0 10px;
+   text-align: center;
 }
 .banner-slide .slide-item img {
-    height: 490px;
-    width: 97%;
+   height: 490px;
+   width: 97%;
+}
+.infor-room {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 70px 0;
+   display: flex;
+}
+.infor-room .tab {
+   width: 66.66%;
+   padding: 0 15px;
+}
+.infor-room .price {
+   width: 33.33%;
+   padding: 0 15px;
+   margin-top: 45px;
+   color: #fff;
+}
+.infor-room .tab .tab-nav .nav {
+   display: flex;
+   list-style: none;
+   border-bottom: 1px solid #dee2e6;
+   padding-left: 0;
+   margin: 0;
+}
+.infor-room .tab .tab-content {
+   margin-top: 50px;
+}
+.infor-room .tab .tab-nav .nav {
+   padding-bottom: 3px;
+}
+.infor-room .tab .tab-nav .nav .nav-item:hover {
+   color: #c5a47e;
+}
+.infor-room .price .price-content {
+   padding: 63px 30px 45px;
+   background-color: #222;
+}
+.infor-room .price .price-content .price-per-day {
+   font-size: 17px;
+   margin-bottom: 45px;
+}
+.infor-room .price .price-content .price-per-day span {
+   font-size: 50px;
+   font-family: "Renner Semibold";
+}
+.infor-room .price .price-content .booking .btn-book {
+   width: 100%;
+   font-size: 13px;
+   text-transform: uppercase;
+   line-height: 45px;
+   color: #fff;
+   font-family: "Renner Medium";
+   background-color: #c5a47e;
+   cursor: pointer;
+   border: none;
+}
+.infor-room .price .price-content .room-type {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   margin-top: 45px;
+}
+.infor-room .price .price-content .room-type .type-item {
+   font-size: 16px;
+   padding: 5px 0;
+   color: #c5a47e;
+}
+.infor-room .price .price-content .room-type .type-item span {
+   color: #fff;
+}
+.other-room {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 70px 0;
+   font-family: "Renner Medium";
+}
+.title {
+   padding: 0 15px;
+}
+.other-room h2 {
+   font-size: 45px;
+   margin-bottom: 10px;
+   padding-bottom: 0px;
+}
+.other-room .sub-title {
+   font-size: 17px;
+   color: #777;
+   margin: 0;
+}
+.other-room .single-room {
+   padding: 0 34px;
+   margin: 0 -2%;
+}
+.other-room .single-room .card-room {
+   width: 96% !important;
+   text-align: center;
+   position: relative;
+   margin: 0 2%;
+}
+.other-room .single-room .card-room:hover .card-discount {
+   background: #000;
+}
+.other-room .single-room .card-room .card-discount {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 35px;
+   line-height: 35px;
+   padding-left: 25px;
+   padding-right: 25px;
+   color: #fff;
+   transition: all 300ms linear 0ms;
+   background: #c5a47e;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.other-room .single-room .card-room .card-img {
+   height: 320px;
+   overflow: hidden;
+}
+.other-room .single-room .card-room .card-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.other-room .single-room .card-room .price-tag {
+   box-shadow: 0 0 13px rgb(0 0 0 / 15%);
+   padding: 8px 20px;
+   display: inline-block;
+   color: #222;
+   background-color: #fff;
+   font-family: "Renner Book";
+   position: absolute;
+   top: 305px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.other-room .single-room .card-room .price-tag p {
+   margin: 0;
+}
+.other-room .single-room .card-room .price-tag span {
+   color: #c5a47e;
+}
+.other-room .single-room .card-room .price-tag span:nth-of-type(1) {
+   text-decoration: line-through;
+   margin-right: 5px;
+}
+.other-room .single-room .card-room .card-body {
+   padding: 50px 30px 26px;
+   color: #777;
+   border: 1px solid #d8d8d8;
+}
+.other-room .single-room .card-room .card-body .card-name {
+   color: #000;
+}
+.other-room .single-room .card-room .card-body .card-link {
+   font-weight: 500;
+   font-size: 13px;
+   font-family: "Renner Medium";
+   border-bottom: 1px solid;
+   color: #222;
+   text-decoration: none;
+   text-transform: uppercase;
 }
