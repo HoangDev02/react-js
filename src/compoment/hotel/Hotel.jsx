@@ -3,12 +3,15 @@ import { HiPlusSm } from "react-icons/hi";
 import { BiLike } from "react-icons/bi";
 import { FiHeart,FiStar } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import MenuItem from '../MenuItem/index';
 
 const Team = ({hotels}) => {
-  const navigate = useNavigate();
-  const handleBooking = () => {
-    navigate("/booking");
-  };
+  
+  
+  // const navigate = useNavigate();
+  // // const handleBooking = () => {
+  // //   navigate("/booking");
+  // // };
   return (
         <div className="searchItem">
         <img
@@ -52,7 +55,7 @@ const Team = ({hotels}) => {
         <div className="siDetailTexts">
           <span className="siPrice">{hotels.price}</span>
           <span className="siTaxOp">Includes taxes and fees</span>
-          <button className="siCheckButton" onClick={handleBooking}>See availability</button>
+          <button className="siCheckButton" >Add</button>
         </div>
       </div>
     </div>

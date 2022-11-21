@@ -11,6 +11,8 @@ import Navbar from "../../compoment/navbar/Navbar";
 
 import FilterableHotelTable from "../../compoment/FilterableHotelsTable/FilterableHotelTable";
 import { HOTELS } from "./data";
+import ButtonCartCount from '../../compoment/ButtonCartCount'
+
 const List = () => {
   return (
     <div>
@@ -21,8 +23,9 @@ const List = () => {
         <div className="listWrapper">
           
           <div className="listResult">
+            <ButtonCartCount/>
             <Gill/>
-            <FilterableHotelTable hotels={HOTELS} />
+            <FilterableHotelTable hotels={HOTELS}  />
           </div>
         </div>
       </div>

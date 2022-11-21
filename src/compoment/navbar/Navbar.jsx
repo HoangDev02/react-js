@@ -31,7 +31,9 @@ const navbar = () => {
                 </li>
             </ul>
         </div>
+
         <div className='navBtn'>
+            
             {/* <button className='navButton'>Register</button>
             <button className='navButton'>login</button> */}
             <button className='navButton'>Booking Now</button>

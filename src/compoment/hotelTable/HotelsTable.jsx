@@ -1,10 +1,10 @@
 import React from 'react'
-import Team from '../team/Team';
-
+import Team from '../hotel/Hotel';
+import MenuItem from '../MenuItem';
 const HotelsTable = ({ hotels, filterText, inStockOnly }) => {
     const rows = []
-    let lastCategory = null;
-    hotels.forEach((hotel) => {
+    // let lastCategory = null;
+    hotels.map((hotel) => {
         if( hotel.name.toLowerCase().indexOf(filterText.toLowerCase())=== -1) {
             return
         }
@@ -12,12 +12,13 @@ const HotelsTable = ({ hotels, filterText, inStockOnly }) => {
             return;
         }
         rows.push(
-            <Team
-              hotels={hotel}
-              key={hotel.name} />
-        );
-        lastCategory = hotel.name;
-    });
+          <MenuItem
+            item={hotel}
+            key={hotel.id}
+          />
+        )
+    
+   });
   return (
     <div>{rows}</div>
   )

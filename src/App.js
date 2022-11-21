@@ -11,6 +11,7 @@ import List from "./pages/list/List";
 import Rooms from "./pages/rooms/Rooms";
 import ViewMore from "./pages/view-more/ViewMore";
 import Map from "./pages/map/Map";
+import Cart from "./pages/Cart";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
         <Route path="/description" element={<ViewMore/>}/>
         <Route path="/booking" element={<Booking/>}/>
         <Route path="/map" element={<Map/>}/>
+        <Route path="/cart" element={<Cart/>}/>
       </Routes>
      </BrowserRouter>
     </div>
