@@ -14,8 +14,12 @@ import {
   import "react-date-range/dist/theme/default.css"; // theme css file
   import { format } from "date-fns";
   import { useNavigate } from "react-router-dom";
-  import home from '../../img/home1-slide-1.jpg'
+  import home1 from '../../img/home1-slide-1.jpg'
+  import home2 from '../../img/home1-slide-2.jpg'
+
+
   const Header = ({ type, filterText }) => {
+   
     const [destination, setDestination] = useState("");
     const [openDate, setOpenDate] = useState(false);
     const [date, setDate] = useState([
@@ -47,8 +51,9 @@ import {
     };
   
     return (
+
       <div className="header">
-        <img src={home} alt="" className="headerSlide"/>
+        <img src={home1} alt="" className="headerSlide"/>
         {/* <Navbar/> */}
         {/* <h1>hello word</h1> */}
         <div

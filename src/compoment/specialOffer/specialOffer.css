@@ -1,13 +1,20 @@
+.container {
+    padding: -5;
+    margin-bottom: 20px;
+}
 .special {
     margin-top: 150px;
 }
 .special-gallery {
+    display: grid;
+}
+.special-main {
     display: flex;
 }
 .special-item-left {
     display: inline-block;
     width: 100%;
-    max-width: 45rem;
+    max-width: 70rem;
 }.thumd {
     background-color: black;
 }
@@ -68,10 +75,8 @@
     width: 395px;
 }
 .special-item-bottom {
-    display: flex;
-    width: 100%;
-    max-width: 50rem;
-    padding: 5px;
+    display: inline-block;
+    margin: 7px 15px;
 }
 .special-item-right .desc .desc-cont {
     background-color: black;
@@ -104,4 +109,7 @@
    font-size: 20px;
    font-style: italic;
    color: #777;
+}
+.container.Wonderful {
+    padding: 0px;
 }

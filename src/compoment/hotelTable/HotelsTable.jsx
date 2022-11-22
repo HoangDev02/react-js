@@ -1,5 +1,4 @@
 import React from 'react'
-import Team from '../hotel/Hotel';
 import MenuItem from '../MenuItem';
 const HotelsTable = ({ hotels, filterText, inStockOnly }) => {
     const rows = []

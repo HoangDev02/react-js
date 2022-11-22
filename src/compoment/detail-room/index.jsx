@@ -1,12 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./detail-room.css"
 import TabContent from './tab-content';
-import { Link } from 'react-router-dom';
+import { Link,useParams } from 'react-router-dom';
+import { HOTELS } from '../../pages/list/data';
 
 const DetailRoom = () => {
+  const { id } = useParams();
+
+  const hotels = HOTELS.find((hotel) => hotel.id === id);
+  const { name, cover_image, price, img_1, img_2,roomType,kingbed } = hotels;
+  
   const settings = {
     dots: false,
     infinite: true,
@@ -51,7 +57,7 @@ const DetailRoom = () => {
     <div className='detail-room-page'>
       <div className='header'>
         <div className="main">
-          <h1>Royal Room</h1>
+          <h1>{name}</h1>
           <p>
             “ APARTMENTS TAILORED TO YOUR HIGHEST STANDARDS  ”
           </p>
@@ -75,13 +81,13 @@ const DetailRoom = () => {
         <div className="price">
           <div className="price-content">
             <div className="price-per-day">
-              <p>Price: <span>200$/Day</span></p>
+              <p>Price: <span>{price}$/Day</span></p>
             </div>
             <div className="booking">
               <button className='btn-book'>Book now</button>
             </div>
             <ul className="room-type">
-              <li className="type-item">Room Type :<span> King Bed</span></li>
+              <li className="type-item">Room Type: {roomType} <span> King Bed: {kingbed}</span></li>
               <li className="type-item">Room Type :<span> King Bed</span></li>
               <li className="type-item">Room Type :<span> King Bed</span></li>
               <li className="type-item">Room Type :<span> King Bed</span></li>

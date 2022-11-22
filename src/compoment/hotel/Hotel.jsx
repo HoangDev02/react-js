@@ -2,7 +2,7 @@ import "./team.css";
 import { HiPlusSm } from "react-icons/hi";
 import { BiLike } from "react-icons/bi";
 import { FiHeart,FiStar } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MenuItem from '../MenuItem/index';
 
 const Team = ({hotels}) => {
@@ -23,7 +23,7 @@ const Team = ({hotels}) => {
             <FiHeart className="heart"/>
           </div>
       <div className="siDesc">
-        <a href="/description" className="siTitle">{hotels.name}
+          <Link to={`/detail/${hotels.id}`} className="siTitle">{hotels.name}
           <FiStar className="team"/>
           <FiStar className="team"/>
           <FiStar className="team"/>
@@ -32,8 +32,9 @@ const Team = ({hotels}) => {
           <HiPlusSm className="mnt"/>
           </span>
 
-        </a>
-        <span className="siDistance">Zuiddoost AmsDetdam - Show on map
+        </Link>
+        <span className="siDistance">
+          Zuiddoost AmsDetdam - Show on map
         <span className=""> </span></span>
         <span className="siTaxiOp">Free airport taxi</span>
         <span className="siSubtitle">

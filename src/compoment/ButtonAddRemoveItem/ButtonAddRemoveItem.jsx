@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import {faPlus, faMinus} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const ButtonAddRemoveItem = ({ quantity, handleAddItem, handleRemoveItem }) => {
   return (
     <div className='btnAddRemove'>
@@ -20,7 +21,6 @@ const ButtonAddRemoveItem = ({ quantity, handleAddItem, handleRemoveItem }) => {
       ) : (
         <div onClick={handleAddItem} className='btnAddRemove-negative'>
           <span>Đặt Phòng Ngay</span>
-          <i class='fa fa-plus' aria-hidden='true'></i>
         </div>
       )}
     </div>

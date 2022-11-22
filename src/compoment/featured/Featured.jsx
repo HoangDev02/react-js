@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const Featured = () => {
     const navigate = useNavigate();
     const handleSearch = () => {
-        navigate("/detail");
+        navigate("/detail/1");
     };
   return (
     <div className='featured'>

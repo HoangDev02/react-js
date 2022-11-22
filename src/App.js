@@ -9,7 +9,7 @@ import DetailRoom from "./pages/detail-rooms/DetailRooms";
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Rooms from "./pages/rooms/Rooms";
-import Map from "./pages/map/Map";
+
 import Cart from "./pages/Cart";
 function App() {
   return (
@@ -19,9 +19,9 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/rooms" element={<Rooms/>}/>
         <Route path="/detail" element={<DetailRoom/>}/>
+        <Route path="/detail/:id" element={<DetailRoom/>}/>
         <Route path="/search" element={<List/>}/>
         <Route path="/booking" element={<Booking/>}/>
-        <Route path="/map" element={<Map/>}/>
         <Route path="/cart" element={<Cart/>}/>
       </Routes>
      </BrowserRouter>

@@ -16,6 +16,7 @@ import './styles.css';
 import { HiPlusSm } from "react-icons/hi";
 import { BiLike } from "react-icons/bi";
 import { FiHeart,FiStar } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 const MenuItem = ({
   item,
@@ -48,7 +49,7 @@ const MenuItem = ({
           <FiHeart className="heart"/>
         </div>
       <div className="siDesc">
-      <a href="/description" className="siTitle">{name}
+      <Link to={`/detail/${id}`} className="siTitle">{name}
         <FiStar className="team"/>
         <FiStar className="team"/>
         <FiStar className="team"/>
@@ -57,7 +58,7 @@ const MenuItem = ({
         <HiPlusSm className="mnt"/>
         </span>
 
-      </a>
+      </Link>
       <span className="siDistance">Zuiddoost AmsDetdam - Show on map
       <span className=""> </span></span>
       <span className="siTaxiOp">Free airport taxi</span>

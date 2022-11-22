@@ -10,6 +10,7 @@ const SpecialOffer = () => {
             <h4 className='heading-text'>ENJOY SPECIAL OFFERS ONLY AT SENOTINA HOTEL</h4>
         </div>
         <div className='special-gallery'>
+            <div className='special-main'>
             <div className='special-item-left'>
                 <div className='thumd'>
                     <img src={banner2} alt="" srcset="" />
@@ -66,6 +67,8 @@ const SpecialOffer = () => {
                     </div>
                 </div>
             </div>
+            </div>
+            
         </div>
         <div className='container'>
             <p className='special-text'>Every month senotina hotel has different special offers, please follow up to get the latest and fastest deals.</p>

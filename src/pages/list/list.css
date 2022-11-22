@@ -21,7 +21,6 @@
   flex: 1;
   background-color: #877d63;
   padding: 10px;
-  /* border-radius: 10px; */
   position: sticky;
   top: 10px;
   height: max-content;
@@ -52,7 +51,6 @@ input::placeholder{
   height: 14px;
   width: 14px;
   position: absolute;
-  /* padding: 30.5px 0 45px 170px; */
   margin-left: 168px;
   margin-top: 30px;
 }
