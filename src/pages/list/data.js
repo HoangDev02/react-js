@@ -2,26 +2,24 @@ export const HOTELS = [
     {
         id: "1",
         category : "Studio Apartment with Air conditioning",
-        name: "Joy Hotel",
-        price: 100,
-        cover_image: "https://d2ile4x3f22snf.cloudfront.net/wp-content/uploads/sites/227/2017/12/04094723/Exterior1.jpg",
+        name: "Raon Hotel",
+        price: 500,
+        cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/234141857.webp?k=e63a1839ff9c2bc6f1e42f7ff0fe149cc291752f89bda349e1ec4bf020d35cbe&o=&s=1",
         stocked : false,
-        description: "Entire studio • 2 bathroom • 21m² 2 full bed",
+        description: "Phòng Tiêu Chuẩn Giường Đôi",
         rooms: "hết phòng",
-        img_1: "https://pathhotel.webhotel.vn/images/image-room-7-980x768.jpg",
-        img_2: "https://pathhotel.webhotel.vn/images/bg-title-room-980x768.jpg",
         roomType: "Presidential",
-        kingbed: "21m² 2 full bed"
+        kingbed: "21m² 2 full bed",
     },
     {
       id: "2",
-        category : "Studio Apartment with Air conditioning",
+        category : "Daisy Dalat House",
         price: 200,
         cover_image: "https://pistachiohotel.com/UploadFile/Gallery/Overview/a2.jpg",
         stocked : true,
         name: "Hyatt Regency Amsterdam",
-        description: "Entire studio • 2 bathroom • 21m² 2 full bed",
-         rooms: "Còn 7 phòng"
+        description: "Phòng Giường Đôi Nhìn Ra Vườn • 2 bathroom • 21m² 2 full bed",
+         rooms: "Còn 1 phòng"
     },
     {
       id: "3",
@@ -31,79 +29,37 @@ export const HOTELS = [
         cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/328272490.webp?k=0fac204c46a91b5fd1ed232ad9d44eea32e32418379ccc62a04d6d157c90908e&o=&s=1",
         stocked : true,
         description: "Entire studio • 1 bathroom • 21m² 1 full bed",
-        rooms: "Còn 5 phòng"
+        rooms: "Còn 2 phòng"
     },
     {
       id:"4",
         category: "Studio Apartment with Air conditioning",
-        name: "Postillion Hotel WTC RotterdamMở trong cửa sổ mới",
+        name: "Eco Lux Riverside Hotel & Spa",
         price: 400,
         cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/286267274.webp?k=3f808b1a436da2ac6fa38941ae59638fd77b1e101db1e13b9d08a168ea7aa498&o=&s=1",
         stocked : true,
         description: "Vila studio • 2 bathroom • 21m² 2 full bed",
-        rooms: "Còn 7 phòng"
+        rooms: "Còn 5 phòng"
 
-  
     },
     {
       id: 5,
       category: "Studio Apartment with Air conditioning",
       name: "RART Hotel",
       price: 500,
-      cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/353732281.webp?k=e1082d83bd7b0a26d520e792b74371858c8c1e471df79f57d2b6bc3cdfc73b37&o=&s=1",
+      cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/160847556.webp?k=884be907487573a036351ee9d0760787f46a69f842e416e3921425767aa237f5&o=&s=1",
       stocked : true,
-      description: "Entire studio • 2 bathroom • 30m² 2 full bed",
-      rooms: "Còn 7 phòng"
-  },
-  {
-    id: 6,
-    category: "Studio Apartment with Air conditioning",
-    name: "Regency Amsterdam",
-    price: 600,
-    cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/132177043.webp?k=f7575e1077b7c58f44e9c940546659c91fdfdfba4b51a60f552dbe72454ed160&o=&s=1",
-    stocked : false,
-    description: "Entire studio • 2 bathroom • 21m² 2 full bed",
-    rooms: "Còn 7 phòng"
-
-  },
-  {
-    id: 7,
-    category: "ibis budget Rotterdam The Hague Airport",
-    name: "Urban Residences RotterdamMở trong cửa sổ mới",
-    price: 100,
-    cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/248125122.webp?k=bc002ab46d38e062f02649eae6b3ea2412777f4f4f52cafa473e4f2bfad13863&o=&s=1",
-    stocked : false,
-    description: "Entire studio • 1 bathroom • 21m² 2 full bed",
-    rooms: "Hết phòng"
-  },
-  {
-    id: 8,
-    category: "ibis budget Rotterdam The Hague Airport",
-    name: "Urban Residences RotterdamMở trong cửa sổ mới",
-    price: 200,
-    cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/248125122.webp?k=bc002ab46d38e062f02649eae6b3ea2412777f4f4f52cafa473e4f2bfad13863&o=&s=1",
-    stocked : false,
-    description: "Entire studio • 1 bathroom • 21m² 2 full bed",
-    rooms: "Hết phòng"
-  },
-  {
-    id: 9,
-    category: "ibis budget Rotterdam The Hague Airport",
-    name: "Urban Residences RotterdamMở trong cửa sổ mới",
-    price: 900,
-    cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/248125122.webp?k=bc002ab46d38e062f02649eae6b3ea2412777f4f4f52cafa473e4f2bfad13863&o=&s=1",
-    stocked : false,
-    description: "Entire studio • 1 bathroom • 21m² 2 full bed",
-    rooms: "Hết phòng"
-  },
-  {
-    id: 10,
-    category: "ibis budget Rotterdam The Hague Airport",
-    name: "Urban Residences RotterdamMở trong cửa sổ mới",
-    price: 782,
-    cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/248125122.webp?k=bc002ab46d38e062f02649eae6b3ea2412777f4f4f52cafa473e4f2bfad13863&o=&s=1",
-    stocked : false,
-    description: "Entire studio • 1 bathroom • 21m² 2 full bed",
-    rooms: "Hết phòng"
-  },
+      description: "Phòng Giường Đôi • 2 bathroom • 30m² 2 full bed",
+      rooms: "Còn 2 phòng"
+    },
+    {
+      id: 6,
+      category: "Studio Apartment with Air conditioning",
+      name: "Volar de Faifo Villal",
+      price: 500,
+      cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/240187492.webp?k=a581ea9bdb2cce9bc3cffb0eb1b96e0a4ee8c9ffebe594f5e34a079fb911731f&o=&s=1",
+      stocked : true,
+      description: "Suite Có Giường Cỡ King Với Ban Công - Phiếu ưu đãi 1 năm cho phép khách thoải mái thay đổi ngày lưu trú",
+      rooms: "Còn 2 phòng"
+    }
 ];

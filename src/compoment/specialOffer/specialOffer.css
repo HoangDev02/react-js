@@ -1,6 +1,5 @@
-.container {
-    padding: -5;
-    margin-bottom: 20px;
+.special .container {
+    padding: 0;
 }
 .special {
     margin-top: 150px;
@@ -55,7 +54,7 @@
 }
 .special-item-top {
     margin-left: 15px;
-    display: inline-block;
+    display: flex;
 }
 .special-item-top .desc {
     width: 100%;
@@ -75,7 +74,7 @@
     width: 395px;
 }
 .special-item-bottom {
-    display: inline-block;
+    display: flex;
     margin: 7px 15px;
 }
 .special-item-right .desc .desc-cont {
@@ -112,4 +111,13 @@
 }
 .container.Wonderful {
     padding: 0px;
+}
+.card-view .container {
+    padding: 0;
+}
+.news .container {
+    padding: 0;
+}
+.testimonial .container {
+    padding: 0;
 }

@@ -47,8 +47,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #c5a47e;
-  /* width: 300px;
-  height: 30px; */
+width: 300px;
   text-align: center;
   margin: 10px 10px;
 }
@@ -62,4 +61,24 @@
 }
 .navButton:hover {
     color: black;
+}
+
+#navLogin{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 22px;
+}
+
+#navLogin a{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#navLogin p{
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
 }

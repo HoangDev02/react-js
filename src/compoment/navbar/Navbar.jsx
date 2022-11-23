@@ -7,9 +7,16 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const navigate = useNavigate();
+    const user = JSON.parse(localStorage.getItem('user'));
+
     const handleSearch = () => {
         navigate("/booking");
-      };
+    };
+
+    const logout = ()=>{
+        localStorage.removeItem("user");
+        navigate("/");
+    }
 
   return (
     <div className='navbar'>
@@ -40,11 +47,24 @@ const Navbar = () => {
             </ul>
         </div>
 
-        <div className='navBtn'> 
-            {/* <button className='navButton'>Register</button>
-            <button className='navButton'>login</button> */}
-            <button className='navButton' onClick={handleSearch}>Booking Now</button>
-        </div>
+        {
+            !user ? 
+                <div id="navLogin">
+                    <a href="/auth/signin">Login</a>
+                </div> 
+            :
+            <>
+            <div id="navLogin">
+             <p>{user.email}</p>
+            </div> 
+            <div id="navLogin">
+             {/* <a onClick={logout}>Logout</a> */}
+                 <button className='navBtn'>
+                    <Link onClick={logout}>Logout</Link>
+                 </button>
+            </div> 
+            </> 
+        }      
     </div>
   )
 }
