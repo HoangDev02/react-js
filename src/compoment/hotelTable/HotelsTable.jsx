@@ -3,7 +3,7 @@ import MenuItem from '../MenuItem';
 const HotelsTable = ({ hotels, filterText, inStockOnly }) => {
     const rows = []
     // let lastCategory = null;
-    hotels.map((hotel) => {
+    hotels.map( (hotel) => {
         if( hotel.name.toLowerCase().indexOf(filterText.toLowerCase())=== -1) {
             return
         }

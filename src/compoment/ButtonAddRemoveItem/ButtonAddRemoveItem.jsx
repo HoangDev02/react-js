@@ -17,7 +17,8 @@ const ButtonAddRemoveItem = ({ quantity, handleAddItem, handleRemoveItem }) => {
           <i class='fa fa-plus' aria-hidden='true' onClick={handleAddItem}>
             <FontAwesomeIcon icon={faPlus}/>
           </i>
-        </div>
+
+        </div>  
       ) : (
         <div onClick={handleAddItem} className='btnAddRemove-negative'>
           <span>Đặt Phòng Ngay</span>

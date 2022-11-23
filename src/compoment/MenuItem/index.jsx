@@ -4,6 +4,7 @@ import { createStructuredSelector } from 'reselect';
 import {
   cartAddItem,
   cartRemoveItem,
+  cartclearItem
 } from '../../redux/cart/cart.action';
 import {
   selectCartItems,
@@ -12,7 +13,6 @@ import {
 
 import ButtonAddRemoveItem from '../ButtonAddRemoveItem/ButtonAddRemoveItem';
 import './styles.css';
-// import "./team.css";
 import { HiPlusSm } from "react-icons/hi";
 import { BiLike } from "react-icons/bi";
 import { FiHeart,FiStar } from "react-icons/fi";
@@ -24,6 +24,7 @@ const MenuItem = ({
   cartList,
   cartAddItem,
   cartRemoveItem,
+  cartclearItem
 }) => {
   const { id, name, cover_image, price, description, category,rooms,stocked} = item;
 
@@ -90,7 +91,6 @@ const MenuItem = ({
             handleAddItem={() => cartAddItem(item)}
           /> 
         }
-       
       </div>
       </div>
       </div>

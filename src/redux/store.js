@@ -2,6 +2,7 @@ import {configureStore} from '@reduxjs/toolkit'
 import { persistStore } from 'redux-persist';
 
 import appreducer from './reducer'
+
 const store = configureStore({ reducer: appreducer })
 
 

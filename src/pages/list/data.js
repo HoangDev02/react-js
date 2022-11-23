@@ -10,6 +10,7 @@ export const HOTELS = [
         rooms: "hết phòng",
         roomType: "Presidential",
         kingbed: "21m² 2 full bed",
+        introduce: "APARTMENTS TAILORED TO YOUR HIGHEST STANDARDS"
     },
     {
       id: "2",
@@ -19,7 +20,9 @@ export const HOTELS = [
         stocked : true,
         name: "Hyatt Regency Amsterdam",
         description: "Phòng Giường Đôi Nhìn Ra Vườn • 2 bathroom • 21m² 2 full bed",
-         rooms: "Còn 1 phòng"
+         rooms: "Còn 1 phòng",
+         roomType: "Presidential",
+         kingbed: "21m² 2 full bed",
     },
     {
       id: "3",
@@ -29,7 +32,9 @@ export const HOTELS = [
         cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/328272490.webp?k=0fac204c46a91b5fd1ed232ad9d44eea32e32418379ccc62a04d6d157c90908e&o=&s=1",
         stocked : true,
         description: "Entire studio • 1 bathroom • 21m² 1 full bed",
-        rooms: "Còn 2 phòng"
+        rooms: "Còn 2 phòng",
+        roomType: "Presidential",
+        kingbed: "21m² 2 full bed",
     },
     {
       id:"4",
@@ -39,27 +44,33 @@ export const HOTELS = [
         cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/286267274.webp?k=3f808b1a436da2ac6fa38941ae59638fd77b1e101db1e13b9d08a168ea7aa498&o=&s=1",
         stocked : true,
         description: "Vila studio • 2 bathroom • 21m² 2 full bed",
-        rooms: "Còn 5 phòng"
+        rooms: "Còn 5 phòng",
+        roomType: "Presidential",
+        kingbed: "21m² 2 full bed",
 
     },
     {
-      id: 5,
+      id: "5",
       category: "Studio Apartment with Air conditioning",
       name: "RART Hotel",
       price: 500,
       cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/160847556.webp?k=884be907487573a036351ee9d0760787f46a69f842e416e3921425767aa237f5&o=&s=1",
       stocked : true,
       description: "Phòng Giường Đôi • 2 bathroom • 30m² 2 full bed",
-      rooms: "Còn 2 phòng"
+      rooms: "Còn 2 phòng",
+      roomType: "Presidential",
+      kingbed: "21m² 2 full bed",
     },
     {
-      id: 6,
+      id: "6",
       category: "Studio Apartment with Air conditioning",
       name: "Volar de Faifo Villal",
       price: 500,
       cover_image: "https://t-cf.bstatic.com/xdata/images/hotel/square600/240187492.webp?k=a581ea9bdb2cce9bc3cffb0eb1b96e0a4ee8c9ffebe594f5e34a079fb911731f&o=&s=1",
       stocked : true,
       description: "Suite Có Giường Cỡ King Với Ban Công - Phiếu ưu đãi 1 năm cho phép khách thoải mái thay đổi ngày lưu trú",
-      rooms: "Còn 2 phòng"
+      rooms: "Còn 2 phòng",
+      roomType: "Presidential",
+      kingbed: "21m² 2 full bed",
     }
 ];

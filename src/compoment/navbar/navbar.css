@@ -47,9 +47,12 @@
   display: flex;
   justify-content: space-between;
   background-color: #c5a47e;
-width: 300px;
   text-align: center;
-  margin: 10px 10px;
+  cursor: pointer;
+}
+.navBtn a {
+  text-decoration: none;
+
 }
 .navButton {
   background-color: #c5a47e;

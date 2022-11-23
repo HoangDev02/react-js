@@ -6,13 +6,12 @@ import "./detail-room.css"
 import TabContent from './tab-content';
 import { Link,useParams } from 'react-router-dom';
 import { HOTELS } from '../../pages/list/data';
-
 import { imgArr } from './imgArr';
 const DetailRoom = () => {
   const { id } = useParams();
 
   const hotels = HOTELS.find((hotel) => hotel.id === id);
-  const { name, cover_image, price, img_1, img_2,roomType,kingbed } = hotels;
+  const { name, cover_image, price, img_1, img_2,roomType,kingbed ,introduce} = hotels;
   
   const settings = {
     dots: false,
@@ -30,7 +29,7 @@ const DetailRoom = () => {
         <div className="main">
           <h1>{name}</h1>
           <p>
-            “ APARTMENTS TAILORED TO YOUR HIGHEST STANDARDS  ”
+            “ {introduce}  ”
           </p>
         </div>
       </div>
@@ -55,7 +54,7 @@ const DetailRoom = () => {
               <p>Price: <span>{price}$/Day</span></p>
             </div>
             <div className="booking">
-              <button className='btn-book'>Book now</button>
+              <button className='btn-book'><Link to={'/booking'}>Booking Now</Link></button>
             </div>
             <ul className="room-type">
               <li className="type-item">Room Type: {roomType} <span> King Bed: {kingbed}</span></li>

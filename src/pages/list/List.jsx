@@ -18,12 +18,9 @@ const List = () => {
     <div className="listMain">
       <Navbar/>
       <ButtonCartCount/>
-
-      {/* <Navbar />
-      <Header type="list" /> */}
       <div className="listContainer">
           <div className="listResult">
-            <Gill/>
+            {/* <Gill className="gill"/> */}
             <FilterableHotelTable hotels={HOTELS}  />
           </div>
       </div>

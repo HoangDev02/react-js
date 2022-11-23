@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useLayoutEffect } from 'react';
 import { Link, useNavigate , useParams } from 'react-router-dom';
-import bgImg from '../../img/img1.jpg';
 
-import axios from "axios";
+
 import Signin from './Signin';
 import Signup from './Signup';
 import "./styles.css";
@@ -56,7 +55,7 @@ function LoginForm(props) {
             alert("Email or password Empty !!!");
             return;
         }
-        if(password == confirm_password){
+        if(password === confirm_password){
             const data = {
                 fullName: fullname,
                 email : email,
@@ -82,30 +81,7 @@ function LoginForm(props) {
                 <Signup onSubmit={handleLoginSignup} />
                 <Signin
                     onSubmit={handleLoginSignin}
-                   
                 />
-
-                <div className="form__overlay-container">
-                    <div className="form__overlay">
-                        <div className="form__overlay-panel form__overlay-left" >
-                            <button
-                                className="form__btn__ghost"
-                                onClick={isShowSignup}
-                            >
-                                <Link to="/auth/signin">Sign In</Link>
-                            </button>
-                           
-                        </div>
-                        <div className="form__overlay-panel form__overlay-right">
-                            <button
-                                className="form__btn__ghost"
-                                onClick={isShowSignup}
-                            >
-                                <Link to="/auth/signup">Sign Up</Link>
-                            </button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );

@@ -1,9 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-// import EmptyCart from '../../components/Cart/EmptyCart';
-// import Footer from '../../components/common/Footer';
-// import Logo from '../../components/common/Logo';
 import Menu from '../../compoment/BookingNow';
 import MenuItem from '../../compoment/MenuItem';
 import {HOTELS} from '../list/data'
@@ -28,8 +25,6 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
             <h1>Bạn chưa đặt phòng</h1>
             <Link to={'/booking'}>Booking Now</Link>
           </div>
-          <h4>Sự lựa chọn ưu tiên</h4>
-          <Menu list={HOTELS}/>
         </div>
       ) : (
         <div className='orders'>

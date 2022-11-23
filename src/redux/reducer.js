@@ -12,4 +12,5 @@ const persistConfig = {
   const reducer = combineReducers({
     cart: cartReducer,
   });
+  
 export default persistReducer(persistConfig, reducer);

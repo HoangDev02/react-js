@@ -58,7 +58,6 @@ const Navbar = () => {
              <p>{user.email}</p>
             </div> 
             <div id="navLogin">
-             {/* <a onClick={logout}>Logout</a> */}
                  <button className='navBtn'>
                     <Link onClick={logout}>Logout</Link>
                  </button>
