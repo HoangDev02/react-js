@@ -53,7 +53,7 @@
     max-height: 45rem;
 }
 .special-item-top {
-    margin-left: 15px;
+    margin-left: 60px;
     display: flex;
 }
 .special-item-top .desc {
@@ -71,7 +71,7 @@
 }
 .specialImg img{
     height: 273px;
-    width: 395px;
+    width: 410px;
 }
 .special-item-bottom {
     display: flex;

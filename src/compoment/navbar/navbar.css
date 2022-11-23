@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+}
 .navbar {
     height: 50px;
     background-color: black;
@@ -50,10 +53,7 @@
   text-align: center;
   cursor: pointer;
 }
-.navBtn a {
-  text-decoration: none;
 
-}
 .navButton {
   background-color: #c5a47e;
   color: white;
@@ -75,13 +75,14 @@
 }
 
 #navLogin a{
-    color: white;
-    font-size: 15px;
+    color: #c5a47e;
+    font-size: 20px;
     cursor: pointer;
+
 }
 
 #navLogin p{
     color: white;
-    font-size: 12px;
+    font-size: 20px;
     cursor: pointer;
 }

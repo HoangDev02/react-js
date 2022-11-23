@@ -4,6 +4,8 @@ import { Link, useNavigate , useParams } from 'react-router-dom';
 
 import Signin from './Signin';
 import Signup from './Signup';
+import Navbar from '../navbar/Navbar'
+import Footer from '../footer/Footer'
 import "./styles.css";
 
 function LoginForm(props) {
@@ -73,6 +75,7 @@ function LoginForm(props) {
     };
     return (
         <div className="form">
+            <Navbar/>
             <div
                 className={
                     isActive ? 'container right-panel-active' : 'container'
@@ -83,6 +86,7 @@ function LoginForm(props) {
                     onSubmit={handleLoginSignin}
                 />
             </div>
+            <Footer/>
         </div>
     );
 }

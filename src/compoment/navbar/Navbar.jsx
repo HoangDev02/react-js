@@ -55,7 +55,7 @@ const Navbar = () => {
             :
             <>
             <div id="navLogin">
-             <p>{user.email}</p>
+             <p className='user'>{user.fullName || user.email}</p>
             </div> 
             <div id="navLogin">
                  <button className='navBtn'>
