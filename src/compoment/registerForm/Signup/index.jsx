@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-
+import './index.css'
 Signup.propTypes = {
   onSubmit: PropTypes.func,
 };
@@ -46,7 +46,7 @@ function Signup({ onSubmit }) {
   return (
     <div className="form__container sign-up-container">
       <div className="register">
-        <div className="col-1">
+        <div className="col-1 signUp">
           <h2>Sign Up</h2>
           <span>register and enjoy the service</span>
 

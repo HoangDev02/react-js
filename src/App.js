@@ -10,6 +10,7 @@ import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Rooms from "./pages/rooms/Rooms";
 import LoginPage from "./pages/login/LoginPage";
+import RegisterPage from "./pages/register/RegisterPage";
 
 import Cart from "./pages/Cart";
 function App() {
@@ -24,7 +25,8 @@ function App() {
         <Route path="/search" element={<List/>}/>
         <Route path="/booking" element={<Booking/>}/>
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/auth/:isStateLogin" element={<LoginPage/>}/>
+        <Route path="/auth/signin" element={<LoginPage/>}/>
+        <Route path="/auth/sigup" element={<RegisterPage/>}/>
 
       </Routes>
      </BrowserRouter>

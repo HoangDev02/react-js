@@ -23,7 +23,7 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
         <div>
           <div className='container'>
             <h1>Bạn chưa đặt phòng</h1>
-            <Link to={'/booking'}>Booking Now</Link>
+            <Link to={'/'}>Booking Now</Link>
           </div>
         </div>
       ) : (

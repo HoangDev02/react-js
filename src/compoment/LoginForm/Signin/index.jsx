@@ -1,11 +1,10 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
 
+import React, { useState } from "react";
+import './index.css'
 function Signin({ onSubmit }) {
   
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const handleSetEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -28,7 +27,7 @@ function Signin({ onSubmit }) {
   return (
     <div className="form__container sign-in-container">
       <div className="register">
-        <div className="col-1">
+        <div className="col-1 signIn">
           <h2>Sign In</h2>
           <span>register and enjoy the service</span>
 

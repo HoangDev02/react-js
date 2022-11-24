@@ -46,7 +46,6 @@ const Navbar = () => {
                 </li>
             </ul>
         </div>
-
         {
             !user ? 
                 <div id="navLogin">
