@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import Menu from '../../compoment/BookingNow';
+import BookingNow from '../../compoment/BookingNow';
 import MenuItem from '../../compoment/MenuItem';
 import {HOTELS} from '../list/data'
 import Navbar from '../../compoment/navbar/Navbar'
@@ -30,7 +30,7 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
         <div className='orders'>
           <h1 className='orders-heading'>Your Orders</h1>
           <div className='orders-menu'>
-            <Menu list={cartList} />
+            <BookingNow list={cartList} />
           </div>
           <h3 className='orders-total'>Your Total ${cartTotal}</h3>
         </div>

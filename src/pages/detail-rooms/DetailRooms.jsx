@@ -7,7 +7,6 @@ const detailRooms = () => {
     <div>
         <Navbar/>
         <DetailRoom/>
-       
         <Footer/>
     </div>
   )

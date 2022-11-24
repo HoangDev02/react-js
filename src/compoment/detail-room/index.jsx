@@ -11,7 +11,7 @@ const DetailRoom = () => {
   const { id } = useParams();
 
   const hotels = HOTELS.find((hotel) => hotel.id === id);
-  const { name, cover_image, price, img_1, img_2,roomType,kingbed ,introduce} = hotels;
+  const { name, price,roomType,kingbed ,introduce} = hotels;
   
   const settings = {
     dots: false,
@@ -21,8 +21,6 @@ const DetailRoom = () => {
     slidesToScroll: 1,
     arrows: false
   }
-
-
   return (
     <div className='detail-room-page'>
       <div className='header'>

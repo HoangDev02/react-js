@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { imgArr } from "./data";
 import "./room.css"
 
 const Room = () => {
+
+
+
+
   return (
     <div  className='room-page'>
       <div className='header'>
@@ -14,55 +19,29 @@ const Room = () => {
         </div>
       </div>
       <div className="list-room">
+   
         <div className="content-room">
-          <div className="item-card">
-            <div className="card-img">
-              <div className="price-tag">
-                <h3>Price: <span>200.00$ / Day</span></h3>
-              </div>
-              <Link to="#"><img src="https://pathhotel.webhotel.vn/images/classic-room.jpg" alt="" /></Link>
-            </div>
-            <div className="card-body">
-              <h3 className="card-name">
-                Basic Room
-              </h3>
-              <div className="card-detail">
-                Basic Room Suite has a comfortable queen size or twin bed, a sitting area, separate desk and bathroom with walk-in rain dance…
-              </div>
-            </div>
-          </div>
-          <div className="item-card">
-            <div className="card-img">
-              <div className="price-tag">
-                <h3>Price: <span>200.00$ / Day</span></h3>
-              </div>
-              <Link to="#"><img src="https://pathhotel.webhotel.vn/images/classic-room.jpg" alt="" /></Link>
-            </div>
-            <div className="card-body">
-              <h3 className="card-name">
-                Basic Room
-              </h3>
-              <div className="card-detail">
-                Basic Room Suite has a comfortable queen size or twin bed, a sitting area, separate desk and bathroom with walk-in rain dance…
-              </div>
-            </div>
-          </div>
-          <div className="item-card">
-            <div className="card-img">
-              <div className="price-tag">
-                <h3>Price: <span>200.00$ / Day</span></h3>
-              </div>
-              <Link to="#"><img src="https://pathhotel.webhotel.vn/images/classic-room.jpg" alt="" /></Link>
-            </div>
-            <div className="card-body">
-              <h3 className="card-name">
-                Basic Room
-              </h3>
-              <div className="card-detail">
-                Basic Room Suite has a comfortable queen size or twin bed, a sitting area, separate desk and bathroom with walk-in rain dance…
-              </div>
-            </div>
-          </div>
+        {
+            imgArr.map((img, index) => {
+              return <div className="item-card" key={index}> 
+                      <div className="card-img">
+                        <div className="price-tag">
+                          <h3>Price: <span>{img.price} / Day</span></h3>
+                       </div>
+                       <Link to="#"><img src={img.link} alt="" /></Link>
+                      </div>
+                      <div className="card-body">
+                      <h3 className="card-name">
+                      {img.tiltle} 
+                       </h3>
+                       <div className="card-detail">
+                        {img.detail}
+                       </div>
+                      </div> 
+                      </div> 
+            })
+          }
+
         </div>
         <div className="special-room">
           <div className="special-room-detail">
@@ -104,7 +83,7 @@ const Room = () => {
                   </li>
                 </ul>
               </div>
-              <Link to="/detail" className="btn-book-now">view room</Link>
+              <Link to="/detail/1" className="btn-book-now">view room</Link>
             </div>
           </div>
           <div className="special-room-img">
@@ -112,54 +91,27 @@ const Room = () => {
           </div>
         </div>
         <div className="content-room">
-          <div className="item-card">
-            <div className="card-img">
-              <div className="price-tag">
-                <h3>Price: <span>200.00$ / Day</span></h3>
-              </div>
-              <Link to="#"><img src="https://pathhotel.webhotel.vn/images/classic-room.jpg" alt="" /></Link>
-            </div>
-            <div className="card-body">
-              <h3 className="card-name">
-                Basic Room
-              </h3>
-              <div className="card-detail">
-                Basic Room Suite has a comfortable queen size or twin bed, a sitting area, separate desk and bathroom with walk-in rain dance…
-              </div>
-            </div>
-          </div>
-          <div className="item-card">
-            <div className="card-img">
-              <div className="price-tag">
-                <h3>Price: <span>200.00$ / Day</span></h3>
-              </div>
-              <Link to="#"><img src="https://pathhotel.webhotel.vn/images/classic-room.jpg" alt="" /></Link>
-            </div>
-            <div className="card-body">
-              <h3 className="card-name">
-                Basic Room
-              </h3>
-              <div className="card-detail">
-                Basic Room Suite has a comfortable queen size or twin bed, a sitting area, separate desk and bathroom with walk-in rain dance…
-              </div>
-            </div>
-          </div>
-          <div className="item-card">
-            <div className="card-img">
-              <div className="price-tag">
-                <h3>Price: <span>200.00$ / Day</span></h3>
-              </div>
-              <Link to="#"><img src="https://pathhotel.webhotel.vn/images/classic-room.jpg" alt="" /></Link>
-            </div>
-            <div className="card-body">
-              <h3 className="card-name">
-                Basic Room
-              </h3>
-              <div className="card-detail">
-                Basic Room Suite has a comfortable queen size or twin bed, a sitting area, separate desk and bathroom with walk-in rain dance…
-              </div>
-            </div>
-          </div>
+        {
+            imgArr.map((img, index) => {
+              return <div className="item-card" key={index}> 
+                      <div className="card-img">
+                        <div className="price-tag">
+                          <h3>Price: <span>{img.price} / Day</span></h3>
+                       </div>
+                       <Link to="#"><img src={img.link} alt="" /></Link>
+                      </div>
+                      <div className="card-body">
+                      <h3 className="card-name">
+                      {img.tiltle} 
+                       </h3>
+                       <div className="card-detail">
+                        {img.detail}
+                       </div>
+                      </div> 
+                      </div> 
+            })
+          }
+
         </div>
       </div>
     </div>
